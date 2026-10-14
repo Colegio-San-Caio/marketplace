@@ -1,6 +1,6 @@
-# Changelog - Evergreen 2026-10-14T14:16:35Z
-
-- Last: 20261014-161635 (2026-10-14T14:16:35Z) SHA:2395a00 ISBN:978-3-00-068463-0
+# Changelog 2026-10-14T14:23:37Z
+fa7b8c4 auto changelog 2026-10-14T14:23:37Z
+b303c12 V5 fix .gitignore + JP changelog no untracked - 161755
 2395a00 evergreen V2 with doi/org
 1cd07e3 evergreen force archive 155643
 2c1b7b7 index  + oeneyeOS 8264b163
@@ -18,8 +18,3 @@ ac151c9 Clocks show date and time
 c495968 Restore Floppy Max page again
 b154d95 restore index
 8fdb652 feat: initial clean version
-
-## Archives
-index-20261014-155906.html
-index-20261014-155643.html
-index-20261014-154839.html
