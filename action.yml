@@ -1,0 +1,18 @@
+name: 'Colegio San Caio - Archive Catalog'
+description: 'V10 auto-archive'
+branding:
+  icon: 'archive'
+  color: 'blue'
+runs:
+  using: 'composite'
+  steps:
+    - run: |
+        TS=$(date +"%Y%m%d-%H%M%S")
+        ISO=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+        mkdir -p archive
+        cp index.html "archive/index-$TS.html" 2>/dev/null || true
+        ls -1t archive/*.html | tail -n +21 | xargs rm -f
+        printf 'window.CATALOG={last:"%s",ts:"%s",archives:[' "$ISO" "$TS" > catalog.js
+        ls -1t archive/*.html | head -20 | sed 's/.*/"&"/' | paste -sd, - >> catalog.js
+        echo ']};' >> catalog.js
+      shell: bash
