@@ -7,12 +7,16 @@ runs:
   using: 'composite'
   steps:
     - run: |
+        mkdir -p archive
         TS=$(date +"%Y%m%d-%H%M%S")
         ISO=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-        mkdir -p archive
-        cp index.html "archive/index-$TS.html" 2>/dev/null || true
-        ls -1t archive/*.html | tail -n +21 | xargs rm -f
+        # If no index.html, create a sample so it never fails
+        [ -f index.html ] || echo "<html><body>Archive $TS</body></html>" > index.html
+        cp index.html "archive/index-$TS.html"
+        # keep 20
+        ls -1t archive/*.html 2>/dev/null | tail -n +21 | xargs rm -f || true
         printf 'window.CATALOG={last:"%s",ts:"%s",archives:[' "$ISO" "$TS" > catalog.js
-        ls -1t archive/*.html | head -20 | sed 's/.*/"&"/' | paste -sd, - >> catalog.js
+        ls -1t archive/*.html 2>/dev/null | head -20 | sed 's/.*/"&"/' | paste -sd, - >> catalog.js || echo -n "" >> catalog.js
         echo ']};' >> catalog.js
+        echo "Created archive/index-$TS.html and catalog.js"
       shell: bash
