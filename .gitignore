@@ -1,9 +1,6 @@
 __pycache__/
 *.pyc
-*.pyo
 *.db
 *.sqlite3
 .env
-termux.db
-cookies*
 .DS_Store

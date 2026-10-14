@@ -1,1 +1,1 @@
-<!DOCTYPE html><html lang="ja"><meta charset="utf-8"><script src="catalog.js"></script><body><h1>JP</h1><div id="c"></div><script>document.getElementById("c").innerText=CATALOG.last</script></body></html>
+<!DOCTYPE html><html lang="ja"><meta charset="utf-8"><script src="catalog.js"></script><body><h1>JP</h1><div id="c"></div><ul id="l"></ul><script>document.getElementById("c").innerText=CATALOG.last;CATALOG.archives.forEach(f=>{let li=document.createElement("li");li.innerHTML="<a href="+f+">"+f+"</a>";document.getElementById("l").appendChild(li)})</script></body></html>
