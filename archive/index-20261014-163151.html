@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>oeneyeOS</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="oeneyeOS - Floppy Max 2.88MB">
+<meta property="og:description" content="oeneyeOS disk images, EULA, and the book MOSFETQ by Kai Olaf Ketelhut.">
+<meta property="og:url" content="https://colegio-san-caio.github.io/demo-repository/">
+<meta property="og:image" content="https://colegio-san-caio.github.io/demo-repository/assets/og-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of MOSFETQ, Technologie als Gesellschaftstreiber">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+body{font-family:Georgia,serif;max-width:720px;margin:0 auto;padding:16px;line-height:1.5;color:#111;background:#fff}
+@media(prefers-color-scheme:dark){body{color:#eee;background:#111}a{color:#8ab4f8}}
+h1{font-size:1.5rem}h2{font-size:1.2rem;margin-top:2rem;border-top:1px solid #8884;padding-top:1rem}
+code{display:block;font-size:.8rem;overflow-x:auto;padding:8px;background:#8882}
+img{max-width:260px;width:100%;height:auto;display:block;margin:12px 0}
+.small{font-size:.85rem;opacity:.8}
+</style>
+</head>
+<body>
+<h1>oeneyeOS - Floppy Max 2.88MB + VHD</h1>
+<style>
+.search{display:flex;gap:6px;margin:12px 0}
+.search input{flex:1;padding:8px;font-size:1rem}
+.demoout{background:#000;color:#0f0;padding:10px;min-height:120px;overflow:auto;white-space:pre-wrap;font-size:.8rem}
+#demoin{width:100%;box-sizing:border-box}
+</style>
+<form class="search" action="https://www.google.com/search" method="get" target="_blank" rel="noopener">
+<input type="search" name="q" placeholder="Search Google" aria-label="Search Google">
+<button type="submit">Search</button>
+</form>
+<p>A: oeneyeOS.img (2.88M) | B: data.img (2.88M) | C: date.img</p>
+<p><a href="oeneyeOS.img">Download A</a> | <a href="data.img">Download B</a> | <a href="date.img">Download C</a></p>
+<code>qemu-system-i386 -fda oeneyeOS.img -fdb data.img -hda date.img</code>
+<p class="small">Back up important data before using the disk-image tools. A defect in disk-writing code can damage data.</p>
+
+<h2>License (EULA)</h2>
+<p>Free to use, modify and share. Don't present a modified version as the official release. The original oeneye code is MIT-licensed, the software is provided as is, and it is not security-certified.</p>
+<p><a href="assets/OENEYE_EULA.pdf">oeneye OS EULA, version 1.0 (PDF)</a><br>
+<span class="small">DOI: <a href="https://doi.org/10.5281/zenodo.22978006">10.5281/zenodo.22978006</a></span></p>
+
+<h2>Book</h2>
+<img src="assets/mosfetq-cover.jpeg" alt="Cover of MOSFETQ, Technologie als Gesellschaftstreiber, by Kai Olaf Ketelhut">
+<p><strong>MOSFETQ &ndash; Technologie als Gesellschaftstreiber</strong><br>
+Kai Olaf Ketelhut<br>
+Fieldberry Group, Berlin<br>
+ISBN 978-3-00-068463-0 | PDF | 21,00 &euro; (+ tax)</p>
+<p><a href="tex.html">Book source (TeX)</a> | <a href="book.pdf">Book (PDF)</a> | <a href="assets/mosfetq-record.pdf">Bibliographic record (PDF)</a> |
+<a href="https://bunq.me/fieldberry">Order / pay</a></p>
+<h2>Verify your download</h2>
+<p>SHA-256 checksums for the disk images. Put both images and the checksum file in one folder, then run the check.</p>
+<code>8264b16354b46691c3e6daa0a764ac7518bd049957e9b6404d5b9e0c5a767f9d  oeneyeOS.img
+1b7b350b66f56a4646573de32f7fea22a050cdf99672d8751c49043abc82ebab  data.img</code>
+<code>sha256sum --check checksum.sha256</code>
+<p><a href="assets/checksum.sha256">checksum.sha256</a></p>
+<p class="small">A matching checksum shows the file is the one published here. It doesn't prove the contents are safe.</p>
+<style>
+.pybox{border:1px solid #8886;border-radius:6px;overflow:hidden;margin:12px 0}
+.pyhead{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:#8882;font-size:.85rem}
+.pyhead a,.pyhead button{margin-left:6px;font-size:.8rem}
+#pysrc{margin:0;padding:12px;overflow:auto;max-height:50vh;font-size:.75rem;white-space:pre}
+</style>
+<h2>Demo: python3 emu_dos.py</h2>
+<p class="small">Runs in your browser with Pyodide (Python compiled to WebAssembly). Nothing is sent to a server.</p>
+<div class="pybox">
+<div class="pyhead"><span>emu_dos.py</span><span><a href="emu_dos.py" target="_blank">Raw</a><button id="demorun" type="button">Run</button><button id="demostop" type="button" disabled>Stop</button></span></div>
+<pre id="pysrc">Loading emu_dos.py...</pre>
+</div>
+<textarea id="demoin" rows="3" placeholder="Input lines for the program, one per line (optional)"></textarea>
+<pre id="demoout" class="demoout">$ python3 emu_dos.py
+(press Run)</pre>
+<script src="demo.js"></script>
+<!--REPOS-->
+<script src="clock-catalog.js"></script>
+<p><a href="galeria.html">Galeria</a> | <a href="macro.html">Macro</a></p>
+</body>
+</html>
+Wed Oct 14 15:56:43 CEST 2026
+Wed Oct 14 15:59:06 CEST 2026
