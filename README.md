@@ -1,3 +1,7 @@
+[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Archive%20Catalog-blue?logo=github&style=for-the-badge)](https://github.com/marketplace/actions/colegio-san-caio-archive-catalog)
+[![Release](https://img.shields.io/github/v/release/Colegio-San-Caio/marketplace?color=green&label=v1)](https://github.com/Colegio-San-Caio/marketplace/releases/tag/v1)
+
+
 # CLEVJH© - MASTER OWNER
 ## wsnN Group® | FieldberryGruppe™ | oeneye OS™ | EVERGREEN®
 
