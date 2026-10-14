@@ -1,15 +1,9 @@
-# DELETE any line with "legal" or "*.zip"
-git add -f 
-legal/US_Federal_Potomac_21215_PUBLIC_7619efe.zip 
-git add -f legal/US_Federal_Potomac_21215_PUBLIC/ 
-git commit -m "Force add federal docs DATE SOLVED 
-13.05.2026 - bypass gitignore - 7619efe"__pycache__/ 
-*.db git push origin 
-federal-potamac-21215-ble-sealed
-git checkout main && git merge federal-potamac-21215-ble-sealed && git push origin main
 __pycache__/
+*.pyc
+*.pyo
 *.db
 *.sqlite3
-cookies*
-termux.db
 .env
+termux.db
+cookies*
+.DS_Store
