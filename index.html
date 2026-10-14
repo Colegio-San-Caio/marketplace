@@ -85,3 +85,4 @@ Wed Oct 14 15:59:06 CEST 2026
 your change
 your change
 change
+<div id="catalog-box" style="font-family:monospace;border:1px solid #ccc;padding:10px;margin:10px"><h3>Archives (<span id="cat-count"></span>) Last: <span id="cat-last"></span></h3><ul id="cat-list"></ul><a href="jp.html">JP</a> | <a href="changelog.html">Changelog</a></div><script src="catalog.js"></script><script>document.getElementById("cat-last").innerText=CATALOG.last;document.getElementById("cat-count").innerText=CATALOG.archives.length;CATALOG.archives.forEach(f=>{let li=document.createElement("li");li.innerHTML="<a href="+f+">"+f+"</a>";document.getElementById("cat-list").appendChild(li)})</script>
