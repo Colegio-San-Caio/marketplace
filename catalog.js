@@ -1,1 +1,1 @@
-(async()=>{const d=document.getElementById("catalog");d.innerHTML="<h2>Catalog</h2>";for(const n of ["Colegio-San-Caio","clevjhon"]){const s=document.createElement("div");s.innerHTML="<h3>"removed-phone
+window.CATALOG={isbn:"978-3-00-068463-0",last:"2026-10-14T14:27:55Z",ts:"20261014-162755",archives:[]};
