@@ -1,2 +1,2 @@
-window.CATALOG={isbn:"978-3-00-068463-0",last:"2026-10-14T14:34:56Z",ts:"20261014-163456",archives:["archive/index-20261014-154839.html","archive/index-20261014-155643.html","archive/index-20261014-155906.html","archive/index-20261014-162755.html","archive/index-20261014-163151.html","archive/index-20261014-163333.html","archive/index-20261014-163456.html"
+window.CATALOG={isbn:"978-3-00-068463-0",last:"2026-10-14T14:35:12Z",ts:"20261014-163512",archives:["archive/index-20261014-154839.html","archive/index-20261014-155643.html","archive/index-20261014-155906.html","archive/index-20261014-162755.html","archive/index-20261014-163151.html","archive/index-20261014-163333.html","archive/index-20261014-163456.html","archive/index-20261014-163512.html"
 ]};
